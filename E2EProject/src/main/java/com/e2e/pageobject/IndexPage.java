@@ -26,7 +26,7 @@ public class IndexPage extends BaseClass {
 		PageFactory.initElements(driver, this); // this keyword initialize all the pageobjects from this class, whenever
 												// we call different methods from this class by creating object for
 												// IndexPage by calling the constructor, all the objects will be
-												// initialized
+												// initialized the 
 	}
 
 	//user action method
