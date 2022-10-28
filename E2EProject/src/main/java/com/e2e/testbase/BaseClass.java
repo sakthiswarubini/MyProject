@@ -33,7 +33,7 @@ public class BaseClass {
 			prop = new Properties();
 			System.out.println("Super constructor invoked");
 			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\sakth\\eclipse-workspace\\E2EProject\\Configuration\\config.properties");
+					"C:\\Users\\sakth\\git\\E2E\\E2EProject\\Configuration\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
