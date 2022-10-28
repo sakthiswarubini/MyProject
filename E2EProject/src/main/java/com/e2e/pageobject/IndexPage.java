@@ -9,7 +9,7 @@ import com.e2e.testbase.BaseClass;
 
 public class IndexPage extends BaseClass {
 
-	// page factory metho
+	// page factory method
 	@FindBy(xpath = "//a[contains(text(),'My Account')]")
 	WebElement signInBtn;
 
