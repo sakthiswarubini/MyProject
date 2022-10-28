@@ -16,11 +16,31 @@
         <methods>
           <include name="afterSuite"/>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="1"/>
+          <include name="loginTest"/>
           <include name="loadConfig"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.e2e.testcases.LoginPageTest -->
+      <class name="com.e2e.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="orderHistoryDetailsTest"/>
+          <include name="validateAccountDetailsTest"/>
+        </methods>
+      </class> <!-- com.e2e.testcases.HomePageTest -->
+      <class name="com.e2e.testcases.IndexPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLogo"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
+          <include name="verifyTitle"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.e2e.testcases.IndexPageTest -->
     </classes>
   </test> <!-- Smoke(failed) -->
 </suite> <!-- Failed suite [Suite] -->
