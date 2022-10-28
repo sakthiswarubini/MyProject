@@ -14,7 +14,7 @@ import com.e2e.actiondriver.Action;
 import com.e2e.testbase.BaseClass;
 
 /**
- * @author sakth
+ * @author sakthi
  *
  */
 public class BillAddressPage extends BaseClass {
