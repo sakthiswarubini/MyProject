@@ -53,7 +53,7 @@ public class EndToEndTest extends BaseClass {
 	@Test(dataProvider = "EndToEndData", dataProviderClass = DataProviders.class, groups = "Regression")
 	public void endToEndTest(String mnumber, String address) throws Throwable {
 		indexPage = new IndexPage();
-		searchResultPage = indexPage.searchProduct("Et Vous Green Floral");
+		searchResultPage = indexPage.searchProduct("Green Folk Print V-Neck Mini Dress");
 		addToCartpage = searchResultPage.clickOnProduct();
 		addToCartpage.enterSize("811213");
 		// addToCartpage.enterQuantity("2");

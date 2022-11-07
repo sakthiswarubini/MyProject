@@ -35,7 +35,7 @@ public class SearchResultPageTest extends BaseClass {
 		driver.quit();
 	}
 	
-	@Test(dataProvider = "searchProduct", dataProviderClass = DataProviders.class)
+	@Test(dataProvider = "searchProduct", dataProviderClass = DataProviders.class,groups = {"Regression", "Sanity"})
 	public void productAvailablityTest(String productName) throws Throwable {
 		indexPage = new IndexPage();
 		//searchResultPage = indexPage.searchProduct("Et Vous Green Floral");

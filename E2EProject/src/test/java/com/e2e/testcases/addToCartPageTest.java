@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.e2e.dataproviders.DataProviders;
 import com.e2e.pageobject.IndexPage;
 import com.e2e.pageobject.SearchResultPage;
 import com.e2e.pageobject.addToCartPage;
@@ -34,10 +35,11 @@ public class addToCartPageTest extends BaseClass {
 		driver.quit();
 	}
 
-	@Test(groups = {"Regression", "Sanity"})
-	public void addToCartTest() throws Throwable {
+	@Test(dataProvider = "searchProduct", dataProviderClass = DataProviders.class,groups = {"Regression", "Sanity"})
+	public void addToCartTest(String productName) throws Throwable {
 		indexPage = new IndexPage();
-		searchResultPage = indexPage.searchProduct("Et Vous Green Floral");
+		//searchResultPage = indexPage.searchProduct("Green Folk Print V-Neck Mini Dress");
+		searchResultPage = indexPage.searchProduct(productName);
 		addToCartpage = searchResultPage.clickOnProduct();
 		//addToCartpage.enterSize("Size 8");
 		//addToCartpage.enterQuantity("2");
