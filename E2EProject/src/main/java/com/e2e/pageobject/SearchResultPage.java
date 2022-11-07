@@ -16,7 +16,7 @@ import com.e2e.testbase.BaseClass;
  */
 public class SearchResultPage extends BaseClass {
 	
-	@FindBy(xpath= "//div[contains(text(),'Et Vous Green Floral Puff Sleeve Midi Dress')]")
+	@FindBy(xpath= "//div[contains(text(),'Green Folk Print V-Neck Mini Dress')]")
 	WebElement productResult;
 	
 	public SearchResultPage() {
